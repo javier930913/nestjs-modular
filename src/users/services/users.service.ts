@@ -65,7 +65,7 @@ export class UsersService {
     const user = this.findOne(id);
     return {
       date: new Date(),
-      user: new User(),
+      user,
       products: this.productsService.findAll(),
     }
   }
